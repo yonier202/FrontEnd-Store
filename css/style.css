@@ -161,3 +161,28 @@ h3{
         grid-column: 2 / 4;
     }
 }
+
+/* nosotros */
+.nosotros{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 768px) {
+    .nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.nosotros__imagen{
+    grid-row: 1/2;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .nosotros__imagen{
+        grid-column: 2/3;
+
+    }
+}
